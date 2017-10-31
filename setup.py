@@ -12,7 +12,7 @@ readme = open('README.rst').read()
 
 setup(
     name='django-tabular-export',
-    version='1.0.2',
+    version='1.1.0',
     description="""Simple spreadsheet exports from Django""",
     long_description=readme,
     author='Chris Adams',
