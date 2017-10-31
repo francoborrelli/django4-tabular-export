@@ -13,7 +13,7 @@ django-tabular-export
     :target: http://django-tabular-export.readthedocs.org/en/latest/?badge=latest
     :alt: Documentation Status
 
-Simple spreadsheet exports from Django
+Simple spreadsheet exports from Django 1.8+
 
 Documentation
 -------------
