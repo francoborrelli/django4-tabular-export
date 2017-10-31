@@ -41,9 +41,6 @@ coverage:
 	coverage html
 	open htmlcov/index.html
 
-changelog:
-	gitchangelog > CHANGELOG.rst
-
 docs:
 	rm -f docs/tabular_export.rst
 	rm -f docs/modules.rst
