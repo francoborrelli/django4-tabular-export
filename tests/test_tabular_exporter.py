@@ -12,16 +12,16 @@ from django.test.testcases import SimpleTestCase, TestCase
 from django.test.utils import override_settings
 
 from tabular_export.admin import ensure_filename
-from tabular_export.core import (convert_value_to_unicode, export_to_csv_response, export_to_debug_html_response,
-                                 export_to_excel_response, flatten_queryset, get_field_names_from_queryset,
-                                 set_content_disposition)
+from tabular_export.core import (convert_value_to_unicode, export_to_csv_response,
+                                 export_to_debug_html_response, export_to_excel_response, flatten_queryset,
+                                 get_field_names_from_queryset, set_content_disposition)
 
 from .models import TestModel
 
 
 def assert_is_valid_xlsx(bytestream, required_filename='xl/worksheets/sheet1.xml'):
-    # We'll confirm that it's returning a valid zip file but will trust the Excel library's tests for
-    # the actual content:
+    # We'll confirm that it's returning a valid zip file but will trust the
+    # Excel library's tests for the actual content:
 
     zf = zipfile.ZipFile(BytesIO(bytestream))
     zf.testzip()

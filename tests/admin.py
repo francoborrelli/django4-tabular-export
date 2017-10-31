@@ -23,4 +23,5 @@ class TestModelAdmin(admin.ModelAdmin):
     def get_queryset(self, *args, **kwargs):
         return self.model.objects.all().annotate(tags_count=Count('tags', distinct=True))
 
+
 admin.site.register(TestModel, TestModelAdmin)

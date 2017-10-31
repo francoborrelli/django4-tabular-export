@@ -26,6 +26,7 @@ def ensure_filename(suffix):
     from the ``ModelAdmin.model``'s ``verbose_name_plural`` value unless a value
     was provided by the caller.
     """
+
     def outer(f):
         # TODO: After upgrading to Python 3, we can drop the extra args using , *, to force keyword-only args
         @wraps(f)
@@ -42,6 +43,8 @@ def export_to_excel_action(modeladmin, request, queryset, filename=None, field_n
     """Django admin action which exports selected records as an Excel XLSX download"""
     headers, rows = flatten_queryset(queryset, field_names=field_names)
     return export_to_excel_response(filename, headers, rows)
+
+
 export_to_excel_action.short_description = _('Export to Excel')
 
 
@@ -50,4 +53,6 @@ def export_to_csv_action(modeladmin, request, queryset, filename=None, field_nam
     """Django admin action which exports the selected records as a CSV download"""
     headers, rows = flatten_queryset(queryset, field_names=field_names)
     return export_to_csv_response(filename, headers, rows)
+
+
 export_to_csv_action.short_description = _('Export to CSV')
