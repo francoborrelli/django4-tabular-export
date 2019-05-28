@@ -50,7 +50,7 @@ Install django-tabular-export::
 
 Then use it in a project::
 
-    from tabular_export import export_to_csv_response, export_to_xlsx_response, flatten_queryset
+    from tabular_export import export_to_csv_response, export_to_excel_response, flatten_queryset
 
     def my_view(request):
         return export_to_csv_response('test.csv', ['Column 1'], [['Data 1'], ['Data 2']])
