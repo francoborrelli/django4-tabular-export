@@ -27,7 +27,7 @@ from itertools import chain
 import xlsxwriter
 from django.conf import settings
 from django.http import HttpResponse, StreamingHttpResponse
-from django.utils.encoding import force_text
+from django.utils.encoding import force_str
 from django.utils.http import urlquote
 from django.views.decorators.cache import never_cache
 
@@ -90,7 +90,7 @@ def convert_value_to_unicode(v):
     elif hasattr(v, 'isoformat'):
         return v.isoformat()
     else:
-        return force_text(v)
+        return force_str(v)
 
 
 def set_content_disposition(f):
@@ -175,7 +175,7 @@ def export_to_excel_response(filename, headers, rows):
             elif isinstance(col, datetime.date):
                 worksheet.write_datetime(y, x, col, date_format)
             else:
-                worksheet.write(y, x, force_text(col, strings_only=True))
+                worksheet.write(y, x, force_str(col, strings_only=True))
 
     workbook.close()
 

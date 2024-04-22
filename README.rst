@@ -34,7 +34,7 @@ Goals
   other values will be specified as the text data type to avoid data corruption in Excel if the values happen
   to resemble a date in the current locale.
 * **Unicode-safety**: input values, including lazy objects, are converted using Django's
-  `force_text <https://docs.djangoproject.com/en/1.9/ref/utils/#django.utils.encoding.force_text>`_
+  `force_str<https://docs.djangoproject.com/en/1.9/ref/utils/#django.utils.encoding.force_str>`_
   function and will always be emitted as UTF-8
 * **Performance**: the code is known to work with data sets up to hundreds of thousands of rows. CSV responses
   use ``StreamingHttpResponse``, use minimal memory, and start very quickly. Excel (XLSX) responses cannot be
