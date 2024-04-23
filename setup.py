@@ -12,7 +12,7 @@ readme = open('README.rst').read()
 
 setup(
     name='django4-tabular-export',
-    version='1.2.0',
+    version='1.1.0',
     description="""Simple spreadsheet exports from Django""",
     long_description=readme,
     author='Franco Borrelli',
@@ -23,7 +23,7 @@ setup(
     ],
     include_package_data=True,
     install_requires=[
-        'Django',
+        'django',
         'xlsxwriter',
     ],
     test_suite='tests.run_tests.run_tests',
