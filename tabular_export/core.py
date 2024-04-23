@@ -28,7 +28,7 @@ import xlsxwriter
 from django.conf import settings
 from django.http import HttpResponse, StreamingHttpResponse
 from django.utils.encoding import force_str
-from django.utils.http import urlquote
+from urllib.parse import quote as urlquote
 from django.views.decorators.cache import never_cache
 
 

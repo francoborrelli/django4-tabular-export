@@ -11,12 +11,12 @@ from setuptools import setup
 readme = open('README.rst').read()
 
 setup(
-    name='django-tabular-export',
-    version='1.1.0',
+    name='django4-tabular-export',
+    version='1.2.0',
     description="""Simple spreadsheet exports from Django""",
     long_description=readme,
-    author='Chris Adams',
-    author_email='cadams@loc.gov',
+    author='Franco Borrelli',
+    author_email='francoborrelli96@gmail.com',
     url='https://github.com/LibraryOfCongress/django-tabular-export',
     packages=[
         'tabular_export',
@@ -32,14 +32,11 @@ setup(
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Framework :: Django',
-        'Framework :: Django :: 1.8',
-        'Framework :: Django :: 1.9',
+        'Framework :: Django :: 4.0',
         'Intended Audience :: Developers',
         'License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication',
         'Natural Language :: English',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.8',
     ],
 )
