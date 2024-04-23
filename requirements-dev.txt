@@ -2,4 +2,3 @@
 
 wheel
 sphinx
-urllib
