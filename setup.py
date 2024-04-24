@@ -6,7 +6,7 @@ from setuptools import setup
 
 setup(
     name='django4-tabular-export',
-    version='1.0.0',
+    version='1.0.1',
     description="""Simple spreadsheet exports for Django 4+""",
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
