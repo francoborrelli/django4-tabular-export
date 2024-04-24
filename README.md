@@ -1,11 +1,11 @@
-  ------------------------
-  django4-tabular-export
-  ------------------------
+  # django4-tabular-export
+
+  [![PyPI version](https://badge.fury.io/py/django4-tabular-export.svg)](https://badge.fury.io/py/django4-tabular-export)
 
 > [!NOTE]  
 > This version is compatible with Django 4+.
 
-# Documentation
+## Documentation
 
 This module contains functions which take (headers, rows) pairs and
 return HttpResponses with either XLSX or CSV downloads and Django admin
