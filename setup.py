@@ -4,13 +4,12 @@ from __future__ import absolute_import, division, print_function
 
 from setuptools import setup
 
-readme = open('README.rst').read()
-
 setup(
     name='django4-tabular-export',
     version='1.0.0',
     description="""Simple spreadsheet exports for Django 4+""",
-    long_description=readme,
+    long_description=open('README.md').read(),
+    long_description_content_type='text/markdown',
     author='Franco Borrelli',
     author_email='francoborrelli96@gmail.com',
     url='https://github.com/francoborrelli/django4-tabular-export',
