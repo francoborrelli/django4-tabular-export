@@ -2,22 +2,18 @@
 # encoding: utf-8
 from __future__ import absolute_import, division, print_function
 
-import os
-import re
-import sys
-
 from setuptools import setup
 
 readme = open('README.rst').read()
 
 setup(
     name='django4-tabular-export',
-    version='1.1.0',
-    description="""Simple spreadsheet exports from Django""",
+    version='1.0.0',
+    description="""Simple spreadsheet exports for Django 4+""",
     long_description=readme,
     author='Franco Borrelli',
     author_email='francoborrelli96@gmail.com',
-    url='https://github.com/LibraryOfCongress/django-tabular-export',
+    url='https://github.com/francoborrelli/django4-tabular-export',
     packages=[
         'tabular_export',
     ],
@@ -36,9 +32,6 @@ setup(
         'Intended Audience :: Developers',
         'License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication',
         'Natural Language :: English',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.8',
     ],
 )
