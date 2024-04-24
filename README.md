@@ -79,7 +79,7 @@ def export_renaming_columns(request):
 ## Admin Integration
 
 There are two convenience [admin
-actions](https://docs.djangoproject.com/en/1.9/ref/contrib/admin/actions/)
+actions](https://docs.djangoproject.com/en/5.0/ref/contrib/admin/actions/)
 which make it simple to add "Export to Excel" and "Export to CSV"
 actions:
 
